@@ -1,0 +1,257 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efefef;
+}
+/*---------------Navaigation------------------*/
+#nav-list {
+  list-style-type: none;
+  display: flex;
+  padding-top: 1.5vh;
+  flex-direction: column;
+}
+#nav-list {
+  padding-left: 1em;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+}
+
+/*---------------Header------------------*/
+
+.main-header {
+  background-color: white;
+  border-bottom: 1px solid rgb(203, 199, 199);
+  height: 10vh;
+  font-size: 1em;
+  font-family: "Roboto", "sans-serif";
+}
+
+.main-header h1 {
+  color: #ccd5ae;
+}
+
+.main-header a {
+  color: #ccd5ae /* rgb(203, 199, 199)*/;
+  font-family: "Roboto", "sans-serif";
+}
+
+/*---------------Index-------------------*/
+.search-form {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 8%;
+  background-color: white;
+  position: absolute;
+}
+.form-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.main-img {
+  width: 100%;
+
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+#main-content p {
+  padding: 1em 0.5em 1em 0.5em;
+  height: 40%;
+}
+
+.main-description {
+  padding: 1em 0.5em 1em 0.5em;
+  background-color: #ccd5ae;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 100;
+  margin-bottom: 1em;
+}
+.main-description h1,
+.card-container h2 {
+  font-size: 1.25em;
+  font-family: "Roboto", "sans-serif";
+}
+/*---------------Cards------------------*/
+.card-container {
+  width: 100%;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+.info-card {
+  margin: 1em 0em 1em 0em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  background-color: white;
+  font-family: "Roboto", "sans-serif";
+}
+.card-image {
+  object-fit: cover;
+}
+.card-text {
+  padding: 0.5em;
+}
+
+/*---------------Footer------------------*/
+.foot-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 10%;
+}
+.newsletter {
+  background-color: #ccd5ae /* rgb(203, 199, 199)*/;
+  text-align: center;
+  height: 10vh;
+  padding: 1% 0% 1% 0%;
+  font-family: "Roboto", "sans-serif";
+}
+
+.foot-page {
+  background-color: #ccd5ae /* rgb(203, 199, 199)*/;
+  text-align: center;
+  padding-bottom: 1em;
+}
+.email-btn {
+  background-color: rgb(163, 163, 163);
+  padding: 3px 10px 3px 10px;
+  border-radius: 3px;
+}
+
+.email-info {
+  padding-top: 10px;
+}
+/*---------------FAQ------------------*/
+.faq-questions {
+  display: flex;
+  flex-direction: column;
+}
+
+#main-faq {
+  margin-left: 4%;
+}
+/*---------------Profile------------------*/
+.profile-img {
+  border-radius: 50%;
+  height: 200px;
+}
+.profile-content {
+  display: flex;
+  flex-direction: row;
+}
+#profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  font-family: "Roboto", "sans-serif";
+}
+.profile-info {
+  display: flex;
+  flex-direction: row;
+}
+#past-adventures {
+  display: flex;
+  flex-direction: row;
+}
+
+.next-info,
+.message-me {
+  padding-top: 10px;
+}
+.message-button {
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 4px 4px;
+}
+
+/*-------Media queries------------*/
+@media (min-width: 769px) {
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 10%;
+    padding: 1em 0em 1em 0em;
+  }
+
+  .nav-wrapper {
+    font-weight: bold;
+  }
+  .main-description {
+    padding-bottom: 1em;
+    padding-top: 1em;
+    background-color: #ccd5ae;
+    font-family: "Roboto", "sans-serif";
+    font-weight: 100;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .info-card {
+    margin: 1em 0em 1em 0em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    background-color: white;
+    width: 30%;
+  }
+  .foot-container .foot-page {
+    padding-top: 1em;
+  }
+
+  /********Profile Page*********/
+  .profile-img {
+    border-radius: 50%;
+    height: 200px;
+  }
+
+  #profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    font-family: "Roboto", "sans-serif";
+  }
+  #past-adventures {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .next-info,
+  .message-me {
+    padding-top: 10px;
+  }
+  .message-button {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 4px 4px;
+  }
+}
